@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xwork - The Future of Freelancing | AI-Powered Marketplace</title>
+    <meta name="description" content="Join Xwork, the revolutionary freelancing platform with AI-powered matching, 5% commission, and verified professionals worldwide.">
+    <meta name="keywords" content="freelancing, AI matching, low commission, verified freelancers, global marketplace">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <h1 class="preloader-logo">Xwork</h1>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">Xwork</span>
+                    <span class="logo-dot">.</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" id="login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+                <button class="btn btn-primary" id="signup-btn">
+                    <i class="fas fa-rocket"></i>
+                    Get Started
+                </button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="floating-elements">
+                <div class="float-element float-1"></div>
+                <div class="float-element float-2"></div>
+                <div class="float-element float-3"></div>
+                <div class="float-element float-4"></div>
+                <div class="float-element float-5"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line-1">Redefining</span>
+                        <span class="title-line-2">Freelancing</span>
+                        <span class="title-line-3">with AI & Trust</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Join the future of work with Xwork's revolutionary platform. 
+                        Connect with verified freelancers worldwide, enjoy AI-powered job matching, 
+                        and experience the lowest commission rates in the industry.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-highlight">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered Matching</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>5-Layer Security</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-percentage"></i>
+                            <span>Only 5% Commission</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large" id="hero-cta-primary">
+                            <i class="fas fa-rocket"></i>
+                            Start Your Journey
+                        </button>
+                        <button class="btn btn-secondary btn-large" id="hero-cta-secondary">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50000">0</div>
+                            <div class="stat-label">Active Freelancers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">% Commission</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="24">0</div>
+                            <div class="stat-label">Hour Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hero-image-bg"></div>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Freelancing Team" class="hero-image">
+                        <div class="hero-card hero-card-1">
+                            <div class="card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>AI Matching</h4>
+                                <p>97% Success Rate</p>
+                            </div>
+                        </div>
+                        <div class="hero-card hero-card-2">
+                            <div class="card-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Global Reach</h4>
+                                <p>190+ Countries</p>
+                            </div>
+                        </div>
+                        <div class="hero-card hero-card-3">
+                            <div class="card-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Low Fees</h4>
+                                <p>5% Commission</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">
+                    Why Choose Xwork?
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Discover the features that make Xwork the future of freelancing
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Matching</h3>
+                    <p class="feature-description">
+                        Our advanced machine learning algorithms analyze skills, experience, 
+                        and project requirements to find the perfect match between freelancers and clients.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">97%</span>
+                            <span class="stat-label">Match Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2x</span>
+                            <span class="stat-label">Faster Hiring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">5-Layer Security</h3>
+                    <p class="feature-description">
+                        Multi-layered security system including data encryption, fraud detection, 
+                        identity verification, secure payments, and 24/7 monitoring.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Secure Payments</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="feature-title">Low Commission</h3>
+                    <p class="feature-description">
+                        Keep more of what you earn with our industry-leading 5% commission rate. 
+                        Plus, enjoy 6 months completely free when you join.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">5%</span>
+                            <span class="stat-label">Commission Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Months Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">Global Reach</h3>
+                    <p class="feature-description">
+                        Connect with talent and opportunities from 190+ countries. 
+                        Work with the best professionals worldwide, anytime, anywhere.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">190+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="feature-title">Video Collaboration</h3>
+                    <p class="feature-description">
+                        Built-in video calling, screen sharing, and real-time collaboration tools 
+                        to make remote work seamless and productive.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">HD</span>
+                            <span class="stat-label">Video Quality</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Meeting Duration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">
+                        Comprehensive analytics dashboard to track your performance, 
+                        earnings, project success rates, and market trends.
+                    </p>
+                    <div class="feature-stats">
+                        <div class="stat">
+                            <span class="stat-number">Real-time</span>
+                            <span class="stat-label">Data Updates</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Metrics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">
+                    How Xwork Works
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Get started in just 3 simple steps
+                </p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Create Your Profile</h3>
+                        <p class="step-description">
+                            Sign up and create a comprehensive profile showcasing your skills, 
+                            experience, and portfolio. Our AI will verify your credentials 
+                            and award you badges based on your expertise.
+                        </p>
+                        <ul class="step-features">
+                            <li><i class="fas fa-check"></i> AI-powered skill assessment</li>
+                            <li><i class="fas fa-check"></i> Instant verification process</li>
+                            <li><i class="fas fa-check"></i> Portfolio showcase</li>
+                            <li><i class="fas fa-check"></i> Professional badges</li>
+                        </ul>
+                    </div>
+                    <div class="step-visual">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Create Profile" class="step-image">
+                    </div>
+                </div>
+                
+                <div class="step step-reverse" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-content">
+                        <h3 class="step-title">Find Perfect Matches</h3>
+                        <p class="step-description">
+                            Our AI-powered matching system analyzes thousands of projects 
+                            and freelancers to find the perfect fit. Get personalized 
+                            recommendations based on your skills and preferences.
+                        </p>
+                        <ul class="step-features">
+                            <li><i class="fas fa-check"></i> Smart job recommendations</li>
+                            <li><i class="fas fa-check"></i> Skill-based matching</li>
+                            <li><i class="fas fa-check"></i> Real-time notifications</li>
+                            <li><i class="fas fa-check"></i> Advanced filters</li>
+                        </ul>
+                    </div>
+                    <div class="step-visual">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Find Matches" class="step-image">
+                    </div>
+                    <div class="step-number">02</div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Work & Get Paid</h3>
+                        <p class="step-description">
+                            Collaborate using our built-in tools, track your progress, 
+                            and get paid securely through our escrow system. Enjoy 
+                            24/7 support throughout your project journey.
+                        </p>
+                        <ul class="step-features">
+                            <li><i class="fas fa-check"></i> Secure escrow payments</li>
+                            <li><i class="fas fa-check"></i> Built-in collaboration tools</li>
+                            <li><i class="fas fa-check"></i> Progress tracking</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                    </div>
+                    <div class="step-visual">
+                        <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Work and Get Paid" class="step-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">
+                    Simple, Transparent Pricing
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Choose the plan that fits your needs. Start free for 6 months!
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Free</h3>
+                        <div class="plan-price">
+                            <span class="price">$0</span>
+                            <span class="period">/ 6 months</span>
+                        </div>
+                        <p class="plan-description">Perfect for getting started</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 0% commission for 6 months</li>
+                        <li><i class="fas fa-check"></i> Basic job matching</li>
+                        <li><i class="fas fa-check"></i> 5 bids per day</li>
+                        <li><i class="fas fa-check"></i> Basic messaging</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Get Started Free</button>
+                </div>
+                
+                <div class="pricing-card pricing-card-popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">
+                            <span class="price">$29.99</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <p class="plan-description">For active freelancers</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5% commission rate</li>
+                        <li><i class="fas fa-check"></i> AI proposal assistant</li>
+                        <li><i class="fas fa-check"></i> Verified badge</li>
+                        <li><i class="fas fa-check"></i> 15 bids per day</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Choose Starter</button>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="price">$49.99</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <p class="plan-description">For professional freelancers</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5% commission rate</li>
+                        <li><i class="fas fa-check"></i> Profile boost</li>
+                        <li><i class="fas fa-check"></i> Video calling</li>
+                        <li><i class="fas fa-check"></i> 50 bids per day</li>
+                        <li><i class="fas fa-check"></i> Priority matching</li>
+                        <li><i class="fas fa-check"></i> Advanced tools</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Choose Pro</button>
+                </div>
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Elite</h3>
+                        <div class="plan-price">
+                            <span class="price">$99.99</span>
+                            <span class="period">/ month</span>
+                        </div>
+                        <p class="plan-description">For top-tier professionals</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 5% commission rate</li>
+                        <li><i class="fas fa-check"></i> Dedicated AI manager</li>
+                        <li><i class="fas fa-check"></i> Featured profile</li>
+                        <li><i class="fas fa-check"></i> Unlimited bids</li>
+                        <li><i class="fas fa-check"></i> Premium support</li>
+                        <li><i class="fas fa-check"></i> White-label solutions</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full">Choose Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">
+                    Frequently Asked Questions
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Everything you need to know about Xwork
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>How does the zero-commission launch work?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the first six months after signup, you pay 0% in platform fees. This gives you time to build your reputation and client base without any upfront costs. After the free period, we charge a competitive 5% commission rate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>How are freelancers verified on Xwork?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We use a comprehensive verification process including identity verification, skill assessments, portfolio reviews, and AI-powered background checks. Verified freelancers receive a blue badge and higher visibility in search results.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>What payment methods do you support?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support major payment gateways including Stripe, PayPal, Payoneer, and local payment methods in 50+ countries. All payments are processed securely through our escrow system.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>How does the AI matching system work?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI analyzes freelancer profiles, past project success, client reviews, and job requirements to create intelligent matches. The system learns from successful projects to improve matching accuracy over time.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question">
+                        <h3>What kind of support do you provide?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 24/7 customer support through live chat, email, and phone. Premium plan users get priority support and dedicated account managers for personalized assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question">
+                        <h3>Can I cancel my subscription anytime?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel your subscription at any time. Your plan will remain active until the end of your current billing period, and you won't be charged for the next cycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Xwork<span>.</span></h3>
+                        <p>The future of freelancing starts here. Join millions of professionals who trust Xwork for their career growth.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">Find Freelancers</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LVS Private Limited Corporation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
